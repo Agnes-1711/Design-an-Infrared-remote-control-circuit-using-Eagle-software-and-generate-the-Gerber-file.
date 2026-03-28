@@ -2,7 +2,6 @@
 ## Exp 4: Design an Infrared remote control circuit using Eagle software
 ## AIM:
 To design the schematic and PCB layout diagram of an Infrared remote control circuit using Eagle software.
-
 ## EQUIPMENT REQUIRED:
 ●	Hardware: Personal Computer (PC)<br>
 ●	Software: Eagle <br>
@@ -40,8 +39,8 @@ The Infrared Remote Control Switch is a simple electronic circuit that uses an i
 When a button on the IR remote is pressed, it sends a modulated 38kHz IR signal which is received by the TSOP1738. The TSOP demodulates the signal and produces a low pulse which is fed into the base of the first 2N4403 transistor, acting as an amplifier. This transistor then provides a strong triggering signal to the CD4027 flip-flop IC, which is wired to toggle its output state with each pulse received. The output from the flip-flop then controls the base of a second 2N4403 transistor, which functions as a switch to drive a 5V relay. When the flip-flop output goes high, the transistor conducts and energizes the relay coil, turning ON the connected load. On receiving the next IR pulse, the output toggles low, deactivating the relay and turning OFF the load. An LED indicator connected in parallel with the relay provides a visual cue of the ON/OFF status. The 1N4007 diode across the relay protects the circuit from voltage spikes due to back EMF when the relay is switched OFF. This toggling operation continues every time a button on the IR remote is pressed, making it suitable for simple wireless control applications.
 ## CIRCUIT DIAGRAM:
 ![image](https://github.com/user-attachments/assets/3e488286-ea7d-4a9b-a057-02a31fdf4430)
-
 ## EXPECTED OUTPUT:
+
 ### Schematic diagram
  <img width="1909" height="1124" alt="image" src="https://github.com/user-attachments/assets/039f4336-ead6-4b10-8d63-94851d67aaa0" />
 
